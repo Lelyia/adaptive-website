@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="images/logo.jpg" alt="логотип" width="100px">
+            </div>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Обо мне</a></li>
+                    <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <section class="content__intro">
+            <h1>Добро пожаловать<br> на тестовый адаптивный сайт</h1>
+            <p>На данной странице использованы<br> методы адаптивой верстки</p>
+        </section>
+        <section class="content__image">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/Foto1.jpg" width="800px" height="auto">
+                <source media="(min-width: 768px)" srcset="images/Foto 2.jpg" width="500px" height="auto">
+                <img class="image" src="images/Foto.jpg" alt="Фото Карелии, радующее глаз" width="300px" height="auto">
+            </picture>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 Ольга Бухина</p>
+    </footer>
+</body>
+
+</html>
